@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>cvTicmac</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+
+        
+        #titulo {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            color: blue;
+            border-color: brown;
+            padding: 6px;
+            margin: 30px;
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+            color:brown;
+            
+            
+           
+        }
+        #datos{
+            font-family: 'Roboto', sans-serif;
+            color:brown;
+            border-bottom: 1px solid;
+        }
+        body {
+            background-color: lightblue;
+            font-family: 'Roboto', sans-serif;
+        }
+       
+        .x{
+            width: 300px;
+            border: 30px rgb(7, 7, 7);
+            padding: 50px;
+            margin: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <header>
+      <button type="button" id="boton_color">cambiar color fondo cv</button>
+
+      
+    <button type="button" id="boton_default"> reestablecer color de fondo  </button>
+
+    <script>
+        
+        document.getElementById(`boton_color`).addEventListener('click', function() {
+    
+        document.body.style.backgroundColor = 'yellow';
+        
+        });
+        
+        document.getElementById(`boton_default`).addEventListener('click', function() {
+    
+        document.body.style.backgroundColor = "lightblue";
+        });      
+
+
+    </script>
+        <h1 id="titulo">Pepe Diego</h1>
+        <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="imagen de persona" height="100px" width="100px">
+    </header>
+    <nav>
+        
+            <h2>TECNICO PC </h2>
+        
+    </nav>
+    <section class="x">
+            
+            <article>
+                <p id="datos">Datos Personales</p>
+                <ul>
+                    <li>dni: 4568996</li>
+                    <li>telefono: 125478963</li>
+                    <li>correo electronico: efi@gmail.com</li>
+                    <li>direccion: Salta</li>
+                </ul>
+            </article>
+            
+        <article>
+            <p id="datos">Experiencia Laboral</p>
+            <ul>
+                <li>Reparacion de  PC y Notebook</li>
+                <li>Reparacion de  impresoras</li>
+                <li>venta de insumos informaticos</li>
+            </ul></article>
+        <article>
+            <p id="datos">Datos academicos</p>
+            <ul>
+                <li> Instituto  Secundario Rosario de Lerma</li>
+                <li>INI</li>
+                <li>EGG</li>
+            </ul>
+        </article>
+    </section>
+    <aside></aside>
+    <footer>2023</footer>
+    
+    
+</body>
+</html>
